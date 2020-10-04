@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>简陋 智能闹钟</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <style>
+        .color-main {
+            background-color: #24292E;
+        }
+
+        .color-main-bg {
+            background-color: whitesmoke;
+        }
+
+        .color-secondly {
+            background-color: rgb(63, 123, 207)
+        }
+
+        .color-write {
+            background-color: white;
+        }
+
+        .sub {
+            width: 100%;
+            height: 50%;
+            padding: 10rem 0;
+        }
+
+        .main {
+            width: 100%;
+            padding: 10rem 0;
+        }
+
+        .centerflex-0 {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+
+        @media screen and (max-width: 768px) {
+            .main-logo {
+                width: 300px;
+            }
+
+            .main-inside {
+                flex: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                align-content: center;
+            }
+            .divider {
+                height: 2px;
+                width: 100%;
+                margin: 1rem 0;
+            }
+            .show-pic
+            {
+                height: 300px;
+                width: 350px;
+                margin: auto;
+            }
+            .show-text
+            {
+                width: 300px;
+                margin: auto;
+                display:flex;
+                justify-content:center;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            .main-logo {
+                width: 400px;
+            }
+
+            .main-inside {
+                flex: 0;
+                display: flex;
+                align-items: center;
+                align-content: center;
+            }
+
+            .divider {
+                width: 2px;
+                height: 100%;
+                margin: 0 1rem;
+            }
+            .show-text
+            {
+                display: flex; flex-direction: column; color: #575E75;
+                
+            }
+        }
+
+        .sub-in {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .topbar {
+            width: 100%;
+            height: 3rem;
+            position: fixed;
+            display: flex;
+            box-shadow: 0 0 4px black;
+            align-items: center;
+            z-index: 100;
+        }
+        .bottom{
+            position: absolute;
+            padding-top: 5px;
+            right: 15px;
+            opacity: 0.75;
+        }
+
+        body {
+            margin: 0;
+            color: #575E75;
+        }
+        
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/css/mdui.min.css"
+        integrity="sha384-2PJ2u4NYg6jCNNpv3i1hK9AoAqODy6CdiC+gYiL2DVx+ku5wzJMFNdE3RoWfBIRP" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/js/mdui.min.js"
+        integrity="sha384-aB8rnkAu/GBsQ1q6dwTySnlrrbhqDwrDnpVHR2Wgm8pWLbwUnzDcIROX3VvCbaK+"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="topbar color-main">
+        <img src="logow.svg" style="padding: 0 0.75rem; height: 1.6rem;"/>
+    </div>
+    <div class="main centerflex-0 color-main-bg">
+        <div style="flex:1;"></div>
+        <div style="display: flex;">
+            <span style="flex:1;"></span>
+            <span class="main-inside">
+                <span>
+                    <img class="main-logo write-to-main-color" src="logo.svg"/>
+                    <div style="text-align: center;">新时代的智能闹钟</div>
+                </span>
+                <span class="color-main divider"></span>
+                <div>
+                    <div style="height: 1rem;"></div>
+                    <a href="https://cc3-dev.codingclip.com/" class="mdui-color-white mdui-btn mdui-btn-raised mdui-btn-block mdui-ripple">抢先体验</a>
+                    <div style="height: 1rem;"></div>
+                    <a href="https://github.com/Clipteam/clipcc-gui" class="mdui-color-white mdui-btn mdui-btn-raised  mdui-ripple">源代码仓库</a>
+                </div>
+            </span>
+            <span style="flex:1;"></span>
+        </div>
+        <div style="flex:1;"></div>
+    </div>
+    <div class="sub centerflex-0">
+        <div style="flex:1;"></div>
+        <div style="display: flex;">
+            <div style="flex:1;"></div>
+            <div class="sub-in">
+                <div class="show-pic">
+                    <img src="img-powerful.svg" style="filter: drop-shadow(0px 4px 3px #AAA)" height="100%" width="100%"/>
+                </div>
+                <div class="show-text">
+                    <div style="flex:1;"></div>
+                    <div>
+                    <h2>更加强大</h2>
+                    <p>
+                        相比普通的闹钟，<br/>
+                        虽然简单，但更智能，更贴心。
+                    </p>
+                    </div>
+                    <div style="flex:1;"></div>
+                </div>
+            </div>
+            <div style="flex:1;"></div>
+        </div>
+        <div style="flex:1;"></div>
+    </div>
+    <div class="bottom">
+        <p>
+            2020 © 简陋(JL)-Team 
+        </p>
+    </div>
+</body>
+
+</html>
